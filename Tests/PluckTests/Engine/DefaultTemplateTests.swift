@@ -1,5 +1,5 @@
 import XCTest
-import NiftyTemplate
+import Rosetta
 @testable import Pluck
 
 
