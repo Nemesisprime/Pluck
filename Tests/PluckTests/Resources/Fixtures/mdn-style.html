@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Array.prototype.map() - MDN</title>
+    <meta name="description" content="The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.">
+    <meta property="og:title" content="Array.prototype.map()">
+    <meta property="og:site_name" content="MDN Web Docs">
+    <meta property="og:image" content="/static/social-card.png">
+    <meta name="keywords" content="javascript, array, map, mdn, reference">
+    <link rel="icon" href="/favicon-32x32.png">
+</head>
+<body>
+    <header><nav>MDN nav</nav></header>
+    <main>
+        <article>
+            <h1>Array.prototype.map()</h1>
+            <p>The <code>map()</code> method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array. It is a non-mutating method that does not change the original array, but instead returns a brand-new array.</p>
+            <h2>Syntax</h2>
+            <pre><code>map(callbackFn)
+map(callbackFn, thisArg)</code></pre>
+            <h3>Parameters</h3>
+            <p>The <strong>callbackFn</strong> is a function to execute for each element in the array. Its return value is added as a single element in the new array. The function is called with three arguments: the current element, its index, and the array map() was called on.</p>
+            <p>The optional <strong>thisArg</strong> is a value to use as <code>this</code> when executing callbackFn. See iterative methods for more information.</p>
+            <h2>Description</h2>
+            <p>The map() method is an iterative method. It calls a provided callbackFn function once for each element in an array and constructs a new array from the results. Read the iterative methods section for more information about how these methods work in general.</p>
+            <p>The callback function is invoked only for indexes of the array which have assigned values. It is not invoked for empty slots in sparse arrays, but it is invoked for indexes which have undefined as their value, or for any index whose value is otherwise considered undefined.</p>
+            <p>Since map builds a new array, calling it without using the returned array is an anti-pattern; use forEach or for...of instead. An indicator that you should not be using map: if you are not using the array it returns or you are not returning a value from the callback, then you should use forEach instead of map.</p>
+        </article>
+    </main>
+    <footer>MDN copyright</footer>
+</body>
+</html>

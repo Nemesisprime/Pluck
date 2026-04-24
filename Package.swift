@@ -39,7 +39,10 @@ let package = Package(
         ),
         .testTarget(
             name: "PluckTests",
-            dependencies: ["Pluck"]
+            dependencies: ["Pluck"],
+            resources: [
+                .copy("Resources/Fixtures"),
+            ]
         ),
     ]
 )
