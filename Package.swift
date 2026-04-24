@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/Nemesisprime/NiftyTemplate.git",
+            url: "https://github.com/Nemesisprime/Rosetta.git",
             branch: "main"
         ),
         .package(
@@ -32,7 +32,7 @@ let package = Package(
         .target(
             name: "Pluck",
             dependencies: [
-                .product(name: "NiftyTemplate", package: "NiftyTemplate"),
+                .product(name: "Rosetta", package: "Rosetta"),
                 .product(name: "SwiftReadability", package: "swift-readability"),
                 "SwiftSoup",
             ],

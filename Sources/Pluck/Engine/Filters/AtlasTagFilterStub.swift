@@ -1,5 +1,5 @@
 import Foundation
-import NiftyTemplate
+import Rosetta
 
 
 // MARK: - AtlasTagFilterStub

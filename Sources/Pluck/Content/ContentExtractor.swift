@@ -1,5 +1,5 @@
 import Foundation
-import NiftyTemplate
+import Rosetta
 import SwiftReadability
 import SwiftSoup
 
