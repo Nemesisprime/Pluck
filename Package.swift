@@ -35,6 +35,9 @@ let package = Package(
                 .product(name: "NiftyTemplate", package: "NiftyTemplate"),
                 .product(name: "SwiftReadability", package: "swift-readability"),
                 "SwiftSoup",
+            ],
+            resources: [
+                .process("Resources/Templates"),
             ]
         ),
         .testTarget(

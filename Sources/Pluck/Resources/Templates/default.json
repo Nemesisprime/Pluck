@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Default",
+  "behavior": "create",
+  "noteNameFormat": "{{title}}",
+  "path": "",
+  "properties": [
+    { "name": "author", "value": "{{author}}", "type": "text" },
+    { "name": "published", "value": "{{published}}", "type": "date" },
+    { "name": "source", "value": "{{url}}", "type": "url" }
+  ],
+  "triggers": [],
+  "noteContentFormat": "# {{title}}\n\n{{content}}\n\n---\nSource: {{url}}",
+  "atlas": {
+    "synopsisFormat": "{{description}}",
+    "tagMappings": [
+      { "source": "metaKeywords" }
+    ]
+  }
+}
